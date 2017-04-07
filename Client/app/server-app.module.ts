@@ -10,15 +10,17 @@ import { AppComponent } from './app.component';
 @NgModule({
     bootstrap: [ AppComponent ],
     imports: [
-        NoopAnimationsModule,
         BrowserModule.withServerTransition({
-            appId: 'my-app-id'
+            appId: 'my-app-id' // make sure this matches with your Browser NgModule
         }),
         ServerModule,
-        AppModule
+        NoopAnimationsModule,
+        
+        // Our Common AppModule
+        AppModule 
     ]
 })
-export class AppServerModule {
+export class ServerAppModule {
 
     // constructor(private transferState: TransferState) { }
 

@@ -11,6 +11,11 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+
+# yarn
+yarn.lock
+
+npm-debug.log.*
  
 # Build results
 [Dd]ebug/
