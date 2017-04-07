@@ -1,14 +1,19 @@
-{
+﻿{
   "compilerOptions": {
     "moduleResolution": "node",
+    "module": "es2015",
     "target": "es5",
-    "sourceMap": true,
+    "noImplicitAny": false,
+    "sourceMap": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipDefaultLibCheck": true,
-    "lib": [ "es2017", "dom" ],
+    "lib": [
+      "es2016",
+      "dom"
+    ],
     "types": [ "node" ]
   },
-  "exclude": [ "bin", "node_modules" ],
-  "atom": { "rewriteTsconfig": false }
+  "include": [
+    "client"
+  ]
 }
